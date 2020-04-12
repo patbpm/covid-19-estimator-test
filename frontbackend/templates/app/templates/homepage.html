@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+{% block content %}
+    
+<div class="col-md-8 offset-md-2">
+    <span class="anchor" id="formUserEdit"></span>
+      <!-- form user info -->
+    <div class="card card-outline-secondary">
+        <div class="card-header">
+            <h3 class="mb-0">COVID 2019 ESTIMATOR</h3>
+        </div>
+        <div class="card-body">
+            <form class="form" role="form" autocomplete="off">
+                <div class="form-group row">
+                    <label class="col-lg-3 col-form-label form-control-label">Period Type</label>
+                    <div class="col-lg-9">
+                        <select id="user_time_zone" class="form-control" size="0" name="data-period-type">
+                            <option value="Days" selected="selected">Days</option>
+                            <option value="Weeks">Weeks</option>
+                            <option value="Weeks">Months</option>
+                            
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group row">
+                    <label class="col-lg-3 col-form-label form-control-label">Time To Elapse</label>
+                    <div class="col-lg-9">
+                        <input class="form-control" type="text" value="Time To Elapse" name="data-time-to-elapse">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-lg-3 col-form-label form-control-label">Reported Cases</label>
+                    <div class="col-lg-9">
+                        <input class="form-control" type="text" value="Reported Cases" name="data-reported-cases">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-lg-3 col-form-label form-control-label">Population</label>
+                    <div class="col-lg-9">
+                        <input class="form-control" type="text" value="Population" name="data-population">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-lg-3 col-form-label form-control-label">Total Hospital Beds</label>
+                    <div class="col-lg-9">
+                        <input class="form-control" type="text" value="Total Hospital Beds" name="data-total-hospital-beds">
+                    </div>
+                </div>
+                                       
+                
+                <div class="form-group row">
+                    <label class="col-lg-3 col-form-label form-control-label"></label>
+                    <div class="col-lg-9">
+                        <input type="button" class="btn btn-primary" value="Estimate" name="data-go-estimate">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- /form user info -->
+
+</div>
+
+
+    
+
+{% endblock %}
