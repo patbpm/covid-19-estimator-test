@@ -28,7 +28,7 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=False, cast=bool)
 
 #ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
-ALLOWED_HOSTS = ['127.0.0.1','convid19estimator.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1','convid2019estimator.herokuapp.com']
 
 
 # Application definition
