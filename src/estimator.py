@@ -52,24 +52,7 @@ def get_duration_in_day(periodType, timeToElapse):
 
 
 def number_beds_avail(totalHospitalBeds, severeImpactCases):
-  """ calculating the number of beds available as integers and not floats"""
-  avail_beds = int((0.35 * totalHospitalBeds) - severeImpactCases)
-  
-  return avail_beds
-
-
-data = {
-    "region": {
-        "name": 'Africa',
-        "avgAge": 19.7,
-        "avgDailyIncomeInUSD": 1,
-        "avgDailyIncomePopulation": 0.73
-    },
-    "periodType": 'months',
-    "timeToElapse": 2,
-    "reportedCases": 445,
-    "population": 4578803,
-    "totalHospitalBeds": 172637
-}
-
-print(estimator(data))
+    """ calculating the number of beds available as integers and not floats"""
+    avail_beds = int((0.35 * totalHospitalBeds) - severeImpactCases)
+    
+    return avail_beds
