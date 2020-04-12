@@ -1,7 +1,17 @@
 .github/.DS_Store
 
+__pycache__/
+*.py[cod]
+
+# SQLite database files
+
+*.sqlite3
+
 # if using VSCode
 .vscode/
+
+#env
+myvenv/
 
 # flake8 config
 setup.cfg
